@@ -25,9 +25,9 @@ src/
 │   └── DiscountService.ts  # 割引計算
 │
 ├── pages/                  # 【UI】 ページコンポーネント (1ページ=1ファイル)
-│   ├── auth/
-│   ├── checkout/
-│   └── dashboard/
+│   ├── admin/
+│   ├── buy/
+│   └── charge/
 │
 ├── components/             # 【UI】 再利用可能な部品
 │   ├── ui/                 # 汎用パーツ (Button, Input)
