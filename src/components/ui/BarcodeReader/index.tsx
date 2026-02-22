@@ -1,7 +1,7 @@
 import type { JSX } from "react";
-import BarcodeReaderSvg from "/Icons/BarcodeReader.svg";
-import BarcodeSvg from "/Icons/Barcode.svg";
-import MemberCardSvg from "/Icons/MemberCard.svg";
+import BarcodeReaderSvg from "/icons/BarcodeReader.svg";
+import BarcodeSvg from "/icons/Barcode.svg";
+import MemberCardSvg from "/icons/MemberCard.svg";
 import styles from "./BarcodeReader.module.scss";
 import { useBarcodeReader } from "../../../hooks/useBarcodeReader";
 
