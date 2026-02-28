@@ -40,6 +40,9 @@
     width: 12px;
     height: 21px;
     margin-left: 19px;
+    transform: rotate(180deg);
+    background-color: #E2E2E2;
+    mask: url('/icons/Arrow.svg') no-repeat center;
 }
 
 .leftArrowButton{
@@ -59,7 +62,6 @@
     padding: 10px 45px;
     border: #6B7280 solid 1px;
     border-radius: 33px;
-
 }
 
 .leftArrow{

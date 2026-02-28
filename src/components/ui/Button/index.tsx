@@ -70,13 +70,13 @@ function ArrowButton({ type = "back", onClick }: ArrowButtonProps) {
     <button className={className} onClick={handleClick}>
       {type === "back" ? (
         <>
-          <img src="/icons/LeftArrow.png" alt="Arrow" className={arrowClass} />
+          <img src="/icons/LeftArrow.svg" alt="Arrow" className={arrowClass} />
           戻る
         </>
       ) : (
         <>
           次へ
-          <img src="/icons/RightArrow.png" alt="Arrow" className={arrowClass} />
+          <img src="/icons/RightArrow.svg" alt="Arrow" className={arrowClass} />
         </>
       )}
     </button>

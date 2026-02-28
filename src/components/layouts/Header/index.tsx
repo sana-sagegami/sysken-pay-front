@@ -14,13 +14,13 @@ function Header({ title, right = "none", shadow = false }: HeaderProps) {
       style={{ boxShadow: shadow ? "0 1.8px 9px 0 #17223330" : "none" }}
     >
       <div className={styles.left}>
-        <img src="/icon/syskenicon.png" alt="Icon" className={styles.icon} />
+        <img src="/icons/Sysken.png" alt="Icon" className={styles.icon} />
         <h1 className={styles.title}>{title}</h1>
       </div>
       {right === "setting" && (
         <Link to="/admin">
           <img
-            src="/icon/setting.png"
+            src="/icons/Setting.svg"
             alt="Setting"
             className={styles.setting}
           />

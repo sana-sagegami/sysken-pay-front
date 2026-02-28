@@ -3,14 +3,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: calc(100vh - 13vh); 
     background-color: #FFFDFB;
 }
 
 .text{
-    font-size: 3.0vw;
+    font-size: 2.6vw;
     color: #5398E1;
     font-family: 'Noto Sans JP', sans-serif;
     margin-bottom: 10vh;
-    margin-top: 15vh;
-    font-weight:bold;
+    margin-top: 20vh;
+          
+}
+
+.input{
+    width: 35vw;
+}
+
+.button{
+    margin-top:25vh;
 }
