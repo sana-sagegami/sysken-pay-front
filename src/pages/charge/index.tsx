@@ -1,4 +1,4 @@
-import Headers from "../../components/layouts/index";
+import Headers from "../../components/layouts/Header/index";
 
 export default function Charge() {
   return (
