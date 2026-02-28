@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
@@ -44,31 +45,38 @@ export default Button;
 
 interface ArrowButtonProps {
   type?: "back" | "next";
+  onClick?: () => void; //type="next"の時のページ遷移先の指定
 }
 
 //デフォルト:back , type: back:戻るボタン, next:次へボタン
-function ArrowButton({ type = "back" }: ArrowButtonProps) {
+function ArrowButton({ type = "back", onClick }: ArrowButtonProps) {
+  const navigate = useNavigate();
   const className =
     type === "back" ? styles.leftArrowButton : styles.rightArrowButton;
+
+  const arrowClass = type === "back" ? styles.leftArrow : styles.rightArrow;
+
+  const handleClick = () => {
+    if (type === "back") {
+      //1つ前のページに戻る
+      navigate(-1);
+    } else if (onClick) {
+      //プロップスで指定
+      onClick();
+    }
+  };
+
   return (
-    <button className={className}>
+    <button className={className} onClick={handleClick}>
       {type === "back" ? (
         <>
-          <img
-            src="/icons/LeftArrow.png"
-            alt="Arrow"
-            className={styles.leftArrow}
-          />
+          <img src="/icons/LeftArrow.png" alt="Arrow" className={arrowClass} />
           戻る
         </>
       ) : (
         <>
           次へ
-          <img
-            src="/icons/RightArrow.png"
-            alt="Arrow"
-            className={styles.rightArrow}
-          />
+          <img src="/icons/RightArrow.png" alt="Arrow" className={arrowClass} />
         </>
       )}
     </button>
