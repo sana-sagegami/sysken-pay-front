@@ -1,7 +1,9 @@
+import Headers from "../../components/layouts/index";
+
 export default function Charge() {
   return (
     <div>
-      <h1>残高チャージ</h1>
+      <Headers title="シス研Pay" shadow={true} />
     </div>
   );
 }
