@@ -1,10 +1,7 @@
-import Headers from "../../components/layouts/Header";
-
-function ChargePage() {
+export default function Charge() {
   return (
     <div>
-      <Headers title="商品購入" right="setting" />
+      <h1>残高チャージ</h1>
     </div>
   );
 }
-export default ChargePage;
