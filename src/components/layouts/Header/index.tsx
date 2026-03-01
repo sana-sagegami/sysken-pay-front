@@ -27,7 +27,7 @@ function Header({ title, right = "none", shadow = false }: HeaderProps) {
         </Link>
       )}
       {right === "toTop" && (
-        <Link to="/" className={styles.link}>
+        <Link to="/buy" className={styles.link}>
           <h1 className={styles.toTop}>最初に戻る</h1>
         </Link>
       )}

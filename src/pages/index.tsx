@@ -1,11 +1,16 @@
+import PayMethodButton from "../components/feature/buy/PayMethodButton";
+import Header from "../components/layouts/Header";
 import { Input } from "../components/ui/Input";
 
 export default function Home() {
   return (
     <div>
-      <h1>ホーム</h1>
+      <Header title="決済方法" right="toTop" />
+      {/* <h1>ホーム</h1>
       <p>Sysken Pay システム</p>
-			<Input />
+			<Input /> */}
+      <PayMethodButton type="cash" />
+      <PayMethodButton type="syspay" />
     </div>
   );
 }
