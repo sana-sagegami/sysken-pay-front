@@ -15,7 +15,7 @@ export default function Charge() {
         <BarcodeReader
           mode="member"
           onScan={handleScan}
-          placeholder="学生書のバーコードをかざしてください"
+          placeholder="学生証のバーコードをかざしてください"
         />
       </div>
       <ArrowButton type="back" />
