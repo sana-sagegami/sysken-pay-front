@@ -1,71 +1,71 @@
-.blueButton{
-    background-color: #5398E1;
-    color: white;
-    font-size: 3.5vw;
-    font-family: 'Noto Sans JP', sans-serif;
-    padding: 10px 50px;
-    border: none;
+.blueButton {
+  background-color: $blue-40;
+  color: $white-100;
+  font-size: 3.5vw;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: $px-5 $px-25;
+  border: none;
 }
 
-.whiteButton{
-    background-color: white;
-    color: #5398E1;
-    font-size: 3.5vw;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: #5398E1 solid 2px;
-    border-radius: 100px;
+.whiteButton {
+  background-color: $white-100;
+  color: $blue-40;
+  font-size: 3.5vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  padding: $px-5 $px-10;
+  border: $blue-40 solid $px-1;
+  border-radius: $px-max;
 }
 
-.rightArrowButton{
-    position: fixed;
-    bottom: 35px;
-    right: -40px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 15vw;
-    height: 9vh;
-    background-color: #5398E1;
-    color: white;
-    font-size: 1.9vw;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bolder;
-    padding: 10px 45px;
-    border:  #6B7280 solid 1px;
-    border-radius: 33px;
+.rightArrowButton {
+  position: fixed;
+  bottom: $px-18;
+  right: -$px-20;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 15vw;
+  height: 9vh;
+  background-color: $blue-40;
+  color: $white-100;
+  font-size: 1.9vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bolder;
+  padding: $px-5 $px-23;
+  border: $gray-70 solid 1px;
+  border-radius: $px-17;
 }
-.rightArrow{
-    width: 12px;
-    height: 21px;
-    margin-left: 19px;
-    transform: rotate(180deg);
-    background-color: #E2E2E2;
-    mask: url('/icons/Arrow.svg') no-repeat center;
-}
-
-.leftArrowButton{
-    position: fixed;
-    bottom: 35px;
-    left: -40px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 15vw;
-    height: 9vh;
-    background-color: white;
-    color: #5398E1;
-    font-size: 1.9vw;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bolder;
-    padding: 10px 45px;
-    border: #6B7280 solid 1px;
-    border-radius: 33px;
+.rightArrow {
+  width: $px-6;
+  height: $px-11;
+  margin-left: $px-10;
+  transform: rotate(180deg);
+  background-color: $gray-10;
+  mask: url("/icons/Arrow.svg") no-repeat center;
 }
 
-.leftArrow{
-    width: 12px;
-    height: 21px;
-    margin-right: 19px;
+.leftArrowButton {
+  position: fixed;
+  bottom: $px-18;
+  left: -$px-20;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 15vw;
+  height: 9vh;
+  background-color: $white-100;
+  color: $blue-40;
+  font-size: 1.9vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bolder;
+  padding: $px-5 $px-23;
+  border: $gray-70 solid 1px;
+  border-radius: $px-17;
+}
+
+.leftArrow {
+  width: $px-6;
+  height: $px-11;
+  margin-right: $px-10;
 }

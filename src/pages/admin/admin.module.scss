@@ -1,25 +1,24 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 13vh); 
-    background-color: #FFFDFB;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 13vh);
+  background-color: $white-100;
 }
 
-.text{
-    font-size: 2.6vw;
-    color: #5398E1;
-    font-family: 'Noto Sans JP', sans-serif;
-    margin-bottom: 10vh;
-    margin-top: 20vh;
-          
+.text {
+  font-size: 2.6vw;
+  color: $blue-40;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 10vh;
+  margin-top: 20vh;
 }
 
-.input{
-    width: 35vw;
+.input {
+  width: 35vw;
 }
 
-.button{
-    margin-top:25vh;
+.button {
+  margin-top: 25vh;
 }

@@ -113,12 +113,12 @@
     }
 
     &.radiusFull {
-      border-radius: 9999px;
+      border-radius: $px-max;
       height: $px-16;
       margin-top: $px-2;
       background-color: $gray-5;
       border: 2px solid $gray-10;
-      padding-right: 40px;
+      padding-right: $px-20;
     }
   }
 }

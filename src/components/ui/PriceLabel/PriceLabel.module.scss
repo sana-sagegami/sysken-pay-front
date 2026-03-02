@@ -3,32 +3,32 @@
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #A5AAB4;
+  padding-bottom: $px-4;
+  border-bottom: 1px solid $gray-40;
 }
 
 .label {
-  font-size: 1.25rem;
+  font-size: $rem-10;
   font-weight: bold;
-  color: $gray-600;
+  color: $gray-70;
 }
 
 .priceContainer {
   display: flex;
   align-items: baseline;
-  gap: 8px;
-  color: #37474f;
+  gap: $px-4;
+  color: $gray-100;
 }
 
 .currency {
   font-family: var(--font-rounded-m-plus-1c), "M PLUS Rounded 1c", sans-serif;
-  font-size: 1.5rem;
+  font-size: $rem-12;
   font-weight: bold;
 }
 
 .price {
   font-family: var(--font-rounded-m-plus-1c), "M PLUS Rounded 1c", sans-serif;
-  font-size: 2.5rem;
+  font-size: $rem-20;
   font-weight: bold;
   letter-spacing: 0.05em;
 }

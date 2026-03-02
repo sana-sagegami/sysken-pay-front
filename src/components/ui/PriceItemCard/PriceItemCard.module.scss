@@ -1,17 +1,17 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: 16px; // カードと削除ボタンの隙間
+  gap: $px-8; // カードと削除ボタンの隙間
   width: 100%;
 }
 
 /* --- カード部分 --- */
 .card {
   flex: 1;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 16px 24px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: $white-100;
+  border-radius: $px-6;
+  padding: $px-8 $px-12;
+  box-shadow: 0px $px-2 $px-5 $shadow-20;
 }
 
 // 画像を見ると、カードの中にも薄い下線があるため設定
@@ -19,30 +19,30 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #e0e0e0; 
+  padding-bottom: $px-4;
+  border-bottom: 1px solid $gray-10;
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: $rem-10;
   font-weight: bold;
-  color: #37474f;
+  color: $gray-100;
 }
 
 .priceContainer {
   display: flex;
   align-items: baseline;
-  gap: 6px;
-  color: #37474f;
+  gap: $px-3;
+  color: $gray-100;
 }
 
 .currency {
-  font-size: 1.5rem;
+  font-size: $rem-12;
   font-weight: bold;
 }
 
 .price {
-  font-size: 2rem;
+  font-size: $rem-16;
   font-weight: bold;
 }
 
@@ -51,15 +51,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  background-color: #cfd8dc; // ボタンのグレー背景
-  color: #546e7a; // 文字のグレー
+  gap: $px-2;
+  background-color: $gray-10; // ボタンのグレー背景
+  color: $gray-70; // 文字のグレー
   font-family: var(--font-rounded-m-plus-1c), "M PLUS Rounded 1c", sans-serif;
-  font-size: 1.1rem;
+  font-size: $rem-9;
   font-weight: bold;
   border: none;
-  border-radius: 999px;
-  padding: 12px 24px;
+  border-radius: $px-max;
+  padding: $px-6 $px-12;
   cursor: pointer;
   transition: opacity 0.2s ease;
 
