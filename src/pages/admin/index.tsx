@@ -6,7 +6,7 @@ import styles from "./admin.module.scss";
 export default function Admin() {
   return (
     <div>
-      <Headers title="シス研Pay" shadow={true} />
+      <Headers title="管理者" />
       <div className={styles.container}>
         <h1 className={styles.text}>パスワードを入力してください</h1>
         <div className={styles.input}>

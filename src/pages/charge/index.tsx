@@ -1,4 +1,4 @@
-import Headers from "../../components/layouts/Header/index";
+import Header from "../../components/layouts/Header/index";
 import { ArrowButton } from "../../components/ui/Button/index";
 import { BarcodeReader } from "../../components/ui/BarcodeReader";
 import styles from "./Charge.module.scss";
@@ -10,7 +10,7 @@ export default function Charge() {
   };
   return (
     <div>
-      <Headers title="シス研Pay" shadow={true} />
+      <Header title="チャージ" />
       <div className={styles.container}>
         <BarcodeReader
           mode="member"

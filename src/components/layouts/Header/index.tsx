@@ -18,7 +18,7 @@ function Header({ title, right = "none", shadow = false }: HeaderProps) {
         <h1 className={styles.title}>{title}</h1>
       </div>
       {right === "setting" && (
-        <Link to="/admin">
+        <Link to="/admin" className={styles.settingLink}>
           <img
             src="/icons/Setting.svg"
             alt="Setting"
@@ -27,7 +27,7 @@ function Header({ title, right = "none", shadow = false }: HeaderProps) {
         </Link>
       )}
       {right === "toTop" && (
-        <Link to="/buy" className={styles.link}>
+        <Link to="/buy" className={`${styles.link} ${styles.toTopLink}`}>
           <h1 className={styles.toTop}>最初に戻る</h1>
         </Link>
       )}

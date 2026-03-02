@@ -3,18 +3,19 @@
   align-items: center;
   gap: $px-8; // カードと削除ボタンの隙間
   width: 100%;
+  max-width: $px-32 * 10;
 }
 
 /* --- カード部分 --- */
 .card {
   flex: 1;
+  min-width: 0;
   background-color: $white-100;
   border-radius: $px-6;
   padding: $px-8 $px-12;
   box-shadow: 0px $px-2 $px-5 $shadow-20;
 }
 
-// 画像を見ると、カードの中にも薄い下線があるため設定
 .content {
   display: flex;
   justify-content: space-between;
@@ -48,6 +49,8 @@
 
 /* --- 削除ボタン部分 --- */
 .deleteButton {
+  flex-shrink: 0;
+  width: $px-20 * 3;
   display: flex;
   align-items: center;
   justify-content: center;

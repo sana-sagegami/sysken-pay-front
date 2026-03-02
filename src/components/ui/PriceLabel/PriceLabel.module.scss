@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
+  max-width: $px-32 * 10;
   padding-bottom: $px-4;
   border-bottom: 1px solid $gray-40;
 }
@@ -10,7 +11,7 @@
 .label {
   font-size: $rem-10;
   font-weight: bold;
-  color: $gray-70;
+  color: $gray-100;
 }
 
 .priceContainer {
