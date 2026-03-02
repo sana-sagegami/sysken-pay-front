@@ -8,12 +8,12 @@ type Props = {
 
 export const PriceLabel = ({ label, price, className }: Props) => {
   return (
-    <div className={`${styles.container} ${className || ""}`}>
+    <div className={`${styles.container} ${className ?? ""}`}>
       <span className={styles.label}>{label}</span>
-      <span className={styles.priceContainer}>
+      <div className={styles.priceContainer}>
         <span className={styles.currency}>¥</span>
         <span className={styles.price}>{price.toLocaleString()}</span>
-      </span>
+      </div>
     </div>
   );
 };

@@ -7,11 +7,16 @@ export type Path =
   | `/`
   | `/admin`
   | `/buy`
+  | `/buy/:paymentMethod`
+  | `/buy/:paymentMethod/confirm`
+  | `/buy/complete`
+  | `/buy/confirm`
   | `/buy/list`
   | `/charge`
 
 export type Params = {
-  
+  '/buy/:paymentMethod': { paymentMethod: string }
+  '/buy/:paymentMethod/confirm': { paymentMethod: string }
 }
 
 export type ModalPath = never

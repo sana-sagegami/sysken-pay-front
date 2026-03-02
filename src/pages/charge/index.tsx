@@ -1,7 +1,6 @@
 import Header from "../../components/layouts/Header/index";
 import { ArrowButton } from "../../components/ui/Button/index";
 import { BarcodeReader } from "../../components/ui/BarcodeReader";
-import styles from "./Charge.module.scss";
 
 export default function Charge() {
   const handleScan = (barcode: string) => {
@@ -9,9 +8,9 @@ export default function Charge() {
     // バーコード処理後の処理
   };
   return (
-    <div>
+    <div className="flex flex-col h-screen overflow-hidden">
       <Header title="チャージ" />
-      <div className={styles.container}>
+      <div className="flex-1 flex flex-col items-center justify-center">
         <BarcodeReader
           mode="member"
           onScan={handleScan}

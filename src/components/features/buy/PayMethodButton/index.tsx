@@ -1,50 +1,49 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./PayMethodButton.module.scss";
 
+// 2個セットで使うラッパーコンポーネント
+export function PayMethodButtonGroup() {
+  return (
+    <div className={styles.group}>
+      <PayMethodButton type="cash" />
+      <PayMethodButton type="syspay" />
+    </div>
+  );
+}
 interface PayMethodButtonProps {
   type: "cash" | "syspay";
 }
 
+
 function PayMethodButton({ type }: PayMethodButtonProps) {
   const navigate = useNavigate();
+  const isCash = type === "cash";
 
   const handleClick = () => {
-    if (type === "cash") {
-      navigate("/buy");
-    } else {
-      navigate("/");
-    }
+    navigate(isCash ? "/buy/cash" : "/buy/syspay");
   };
 
   return (
-    <div>
-      {type === "cash" ? (
-        <button className={styles.cashButton} onClick={handleClick}>
-          <div className={styles.content}>
-            <img src="/icons/Cash.svg" alt="Cash" className={styles.cashIcon} />
-            現金
-          </div>
-          <img src="/icons/LeftArrow.svg" alt="Cash" className={styles.arrow} />
-        </button>
-      ) : (
-        <button className={styles.syspayButton} onClick={handleClick}>
-          <div className={styles.content}>
-            <img
-              src="/icons/BlueBarcode.svg"
-              alt="SysPay"
-              className={styles.syspayIcon}
-            />
-            シス研Pay
-          </div>
-          <img
-            src="/icons/LeftArrow.svg"
-            alt="SysPay"
-            className={styles.arrow}
-          />
-        </button>
-      )}
-    </div>
+    <button
+      className={isCash ? styles.cashButton : styles.syspayButton}
+      onClick={handleClick}
+    >
+      <div className={styles.content}>
+        <img
+          src={isCash ? "/icons/Cash.svg" : "/icons/BlueBarcode.svg"}
+          alt={isCash ? "Cash" : "SysPay"}
+          className={isCash ? styles.cashIcon : styles.syspayIcon}
+        />
+        {isCash ? "現金" : "シス研Pay"}
+      </div>
+      <img
+        src="/icons/LeftArrow.svg"
+        alt="arrow"
+        className={styles.arrow}
+      />
+    </button>
   );
 }
+
 
 export default PayMethodButton;

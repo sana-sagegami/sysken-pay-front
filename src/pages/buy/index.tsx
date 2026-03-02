@@ -26,14 +26,15 @@ export default function Buy(): JSX.Element {
   };
 
   return (
-    <div>
+    <div className="flex flex-col h-screen overflow-hidden">
       <Header title="商品購入" />
-      <BarcodeReader
-        mode={mode}
-        onScan={handleScan}
-        placeholder="商品のバーコードをかざしてください"
-      />
-
+      <div className="flex flex-1 items-center justify-center">
+        <BarcodeReader
+          mode={mode}
+          onScan={handleScan}
+          placeholder="商品のバーコードをかざしてください"
+        />
+      </div>
       <ArrowButton type="back" />
     </div>
   );
