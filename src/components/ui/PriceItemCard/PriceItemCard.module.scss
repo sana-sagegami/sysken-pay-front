@@ -1,18 +1,18 @@
 .wrapper {
   display: flex;
   align-items: center;
-  gap: $px-8; // カードと削除ボタンの隙間
+  gap: $px-16;
   width: 100%;
-  max-width: $px-32 * 10;
+  max-width: $px-32 * 30;
 }
 
-/* --- カード部分 --- */
 .card {
   flex: 1;
   min-width: 0;
-  background-color: $white-100;
-  border-radius: $px-6;
-  padding: $px-8 $px-12;
+  max-height: $px-32 * 40;
+  background-color: $white;
+  border-radius: $px-12;
+  padding: $px-20 $px-32;
   box-shadow: 0px $px-2 $px-5 $shadow-20;
 }
 
@@ -20,12 +20,12 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: $px-4;
+  padding-bottom: $px-12;
   border-bottom: 1px solid $gray-10;
 }
 
 .title {
-  font-size: $rem-10;
+  font-size: $rem-16;
   font-weight: bold;
   color: $gray-100;
 }
@@ -33,45 +33,50 @@
 .priceContainer {
   display: flex;
   align-items: baseline;
-  gap: $px-3;
+  gap: $px-4;
   color: $gray-100;
 }
 
 .currency {
-  font-size: $rem-12;
+  font-size: $rem-18;
   font-weight: bold;
 }
 
 .price {
-  font-size: $rem-16;
+  font-size: $rem-23;
   font-weight: bold;
 }
 
-/* --- 削除ボタン部分 --- */
 .deleteButton {
   flex-shrink: 0;
-  width: $px-20 * 3;
+  width: $px-32 * 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: $px-2;
-  background-color: $gray-10; // ボタンのグレー背景
-  color: $gray-70; // 文字のグレー
+  gap: $px-4;
+  background-color: $gray-10;
+  color: $gray-70;
   font-family: var(--font-rounded-m-plus-1c), "M PLUS Rounded 1c", sans-serif;
-  font-size: $rem-9;
+  font-size: $rem-14;
   font-weight: bold;
   border: none;
   border-radius: $px-max;
-  padding: $px-6 $px-12;
+  padding: $px-12 $px-20;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.85;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    box-shadow: 0px $px-1 $px-2 $shadow-20;
+    opacity: 0.9;
   }
 }
 
 .closeIcon {
-  font-size: 1.2rem;
-  font-weight: normal; // ×は少し細めにする
+  font-size: 2rem;
+  font-weight: normal;
 }

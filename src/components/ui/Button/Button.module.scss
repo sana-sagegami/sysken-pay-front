@@ -1,14 +1,26 @@
 .blueButton {
   background-color: $blue-40;
-  color: $white-100;
+  color: $white;
   font-size: 3.5vw;
   font-family: "Noto Sans JP", sans-serif;
   padding: $px-5 $px-32;
   border: none;
+
+  transition: opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    box-shadow: 0px $px-1 $px-2 $shadow-20;
+    opacity: 0.9;
+  }
 }
 
 .whiteButton {
-  background-color: $white-100;
+  background-color: $white;
   color: $blue-40;
   font-size: 3.5vw;
   font-family: "Noto Sans JP", sans-serif;
@@ -16,56 +28,90 @@
   padding: $px-5 $px-10;
   border: $blue-40 solid $px-1;
   border-radius: $px-max;
+  transition: opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    box-shadow: 0px $px-1 $px-2 $shadow-20;
+    opacity: 0.9;
+  }
 }
 
 .rightArrowButton {
   position: fixed;
   bottom: $px-18;
-  right: -$px-20;
+  right: -$px-32 * 1.5;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 15vw;
   height: 9vh;
   background-color: $blue-40;
-  color: $white-100;
-  font-size: 1.9vw;
+  color: $white;
+  font-size: 1.5vw;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bolder;
   padding: $px-5 $px-23;
   border: $gray-70 solid 1px;
-  border-radius: $px-17;
+  border-radius: $px-25;
+  transition: opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    box-shadow: 0px $px-1 $px-2 $shadow-20;
+    opacity: 0.9;
+  }
 }
 .rightArrow {
-  width: $px-6;
-  height: $px-11;
+  width: $px-18;
+  height: $px-18;
   margin-left: $px-10;
   transform: rotate(180deg);
-  background-color: $gray-10;
+  background-color: $white;
   mask: url("/icons/Arrow.svg") no-repeat center;
 }
 
 .leftArrowButton {
   position: fixed;
   bottom: $px-18;
-  left: -$px-20;
+  left: -$px-32 * 1.5;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 15vw;
   height: 9vh;
-  background-color: $white-100;
+  background-color: $white;
   color: $blue-40;
-  font-size: 1.9vw;
+  font-size: 1.5vw;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bolder;
-  padding: $px-5 $px-23;
+  padding: $px-24 $px-32 $px-24 $px-24;
   border: $gray-70 solid 1px;
-  border-radius: $px-17;
+  border-radius: $px-25;
+  transition: opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    transform: scale(0.97);
+    box-shadow: 0px $px-1 $px-2 $shadow-20;
+    opacity: 0.9;
+  }
 }
 
 .leftArrow {
-  width: $px-6;
-  height: $px-11;
+  width: $px-18;
+  height: $px-18;
   margin-right: $px-10;
+  margin-top: $px-2;
 }

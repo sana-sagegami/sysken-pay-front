@@ -7,6 +7,7 @@ export type Path =
   | `/`
   | `/admin`
   | `/buy`
+  | `/buy/list`
   | `/charge`
 
 export type Params = {
