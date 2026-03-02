@@ -1,9 +1,18 @@
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ChargePage from "./pages/charge";
+import AdminPage from "./pages/admin";
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<h1>Home Page</h1>} />
+          <Route path="/charge" element={<ChargePage />} />
+          <Route path="/admin" element={<AdminPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

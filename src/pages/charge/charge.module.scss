@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDFB;
+}
+
+.text{
+    font-size: 3.0vw;
+    color: #5398E1;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 10vh;
+    margin-top: 15vh;
+    font-weight:bold;
+}

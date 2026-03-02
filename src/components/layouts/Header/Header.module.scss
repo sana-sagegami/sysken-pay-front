@@ -1,0 +1,48 @@
+body {
+    margin: 0 0 0 0;
+    padding:  0 0 0 0;
+    font-family: "Noto Sans JP", sans-serif;
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 13vh;
+        padding: 0 3.5vw 0 1.3vw;
+        background-color: #FFFDFB;
+        box-shadow: 0 1.8px 9px 0 #17223330;
+        position: relative;
+        z-index: 10;
+
+        .left {
+        display: flex;
+        align-items: center;
+
+            .icon {
+            width: 65px;
+            height: 65px;
+            transform: rotate(55deg);
+            }   
+
+            .title {
+                color: #5398E1;
+                font-size: 2.5vw;
+                margin: 1.5vw
+            }
+        }
+
+        .toTop{
+            color: #6B7280;
+            font-size: 2.5vw;
+        }
+        .link{
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+
+
