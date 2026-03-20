@@ -1,7 +1,7 @@
 import { useState, type JSX } from "react";
 import { BarcodeReader } from "../../components/ui/BarcodeReader";
 import Header from "../../components/layouts/Header";
-import { ArrowButton } from "../../components/ui/Button";
+import Button from "../../components/ui/Button";
 import { useNavigate } from "react-router-dom";
 import { useItemStore } from "../../store/useItemStore";
 
@@ -35,7 +35,9 @@ export default function Buy(): JSX.Element {
           placeholder="商品のバーコードをかざしてください"
         />
       </div>
-      <ArrowButton type="back" />
+      <Button variant="backButton" onClick={() => navigate("/")}>
+        戻る
+      </Button>
     </div>
   );
 }

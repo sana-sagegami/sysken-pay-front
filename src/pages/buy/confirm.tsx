@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/layouts/Header";
-import { ArrowButton } from "../../components/ui/Button";
+import Button from "../../components/ui/Button";
 import { PayMethodButtonGroup } from "../../components/features/buy/PayMethodButton";
 import Total from "../../components/features/buy/Total";
 
@@ -16,7 +16,9 @@ export default function BuyConfirmPage() {
           <PayMethodButtonGroup />
         </div>
       </div>
-      <ArrowButton type="back" onClick={() => navigate("/buy/list")} />
+      <Button variant="backButton" onClick={() => navigate("/buy/list")}>
+        戻る
+      </Button>
     </div>
   );
 }

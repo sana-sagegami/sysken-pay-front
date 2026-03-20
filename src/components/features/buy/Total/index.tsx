@@ -31,14 +31,7 @@ export default function Total({
       </div>
       {showButton && (
         <div className={styles.buttonWrapper}>
-          <Button
-            text="完了"
-            buttonColor="blue"
-            fontSize="2vw"
-            width="40vw"
-            height="8vh"
-            onclick={handleCashComplete}
-          />
+          <Button onClick={handleCashComplete}>完了</Button>
         </div>
       )}
     </div>

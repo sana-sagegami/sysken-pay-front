@@ -1,4 +1,4 @@
-import { ArrowButton } from "../../components/ui/Button";
+import Button from "../../components/ui/Button";
 import { useNavigate } from "react-router-dom";
 import { ItemList } from "../../components/features/buy/ItemList";
 import { useItemStore } from "../../store/useItemStore";
@@ -14,8 +14,12 @@ export default function BuyListPage() {
       <div className="flex-1 flex flex-col items-center justify-start pt-10 gap-4 overflow-hidden">
         <ItemList Items={items} onDelete={removeItem} />
       </div>
-      <ArrowButton type="back" onClick={() => navigate("/buy")} />
-      <ArrowButton type="next" onClick={() => navigate("/buy/confirm")} />
+      <Button variant="backButton" onClick={() => navigate("/buy")}>
+        戻る
+      </Button>
+      <Button variant="nextButton" onClick={() => navigate("/buy/confirm")}>
+        次へ
+      </Button>
     </div>
   );
 }

@@ -1,11 +1,16 @@
 import Header from "../../components/layouts/Header/index";
-import { ArrowButton } from "../../components/ui/Button/index";
+import Button from "../../components/ui/Button/index";
 import { BarcodeReader } from "../../components/ui/BarcodeReader";
+import { useNavigate } from "react-router-dom";
 
 export default function Charge() {
+  const navigate = useNavigate();
   const handleScan = (barcode: string) => {
     console.log("スキャンされたバーコード:", barcode);
     // バーコード処理後の処理
+  };
+  const handleHome = () => {
+    navigate("/");
   };
   return (
     <div className="flex flex-col h-screen overflow-hidden">
@@ -17,7 +22,9 @@ export default function Charge() {
           placeholder="学生証のバーコードをかざしてください"
         />
       </div>
-      <ArrowButton type="back" />
+      <Button variant="backButton" onClick={handleHome}>
+        戻る
+      </Button>
     </div>
   );
 }

@@ -1,8 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import Headers from "../../components/layouts/Header/index";
-import Button, { ArrowButton } from "../../components/ui/Button/index";
+import Button from "../../components/ui/Button/index";
 import { Input } from "../../components/ui/Input";
 
 export default function Admin() {
+  const navigate = useNavigate();
+  const handleHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       <Headers title="管理者" />
@@ -14,16 +20,12 @@ export default function Admin() {
           <Input type="password" />
         </div>
         <div>
-          <Button
-            text="決定"
-            buttonColor="blue"
-            width="23vw"
-            height="11vh"
-            fontSize="2.8vw"
-          />
+          <Button buttonColor="blue">決定</Button>
         </div>
       </div>
-      <ArrowButton type="back" />
+      <Button variant="backButton" onClick={handleHome}>
+        戻る
+      </Button>
     </div>
   );
 }
