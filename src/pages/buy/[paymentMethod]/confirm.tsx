@@ -23,7 +23,7 @@ export default function SysPayConfirmPage() {
           fontSize="2vw"
           width="40vw"
           height="8vh"
-          onclick={() => navigate("/buy/complete")}
+          onClick={() => navigate("/buy/complete")}
         />
       </div>
       <ArrowButton type="back" onClick={() => navigate("/buy/syspay")} />
