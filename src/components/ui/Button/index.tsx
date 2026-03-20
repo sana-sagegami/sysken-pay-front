@@ -10,7 +10,7 @@ interface ButtonProps {
   height?: string;
   borderWidth?: string;
   borderRadius?: string;
-  onclick?: () => void;
+  onClick?: () => void;
 }
 
 function Button({
@@ -22,14 +22,14 @@ function Button({
   height,
   borderWidth = "1.5px",
   borderRadius = "100px",
-  onclick,
+  onClick,
 }: ButtonProps) {
   const className =
     buttonColor === "white" ? styles.whiteButton : styles.blueButton;
   return (
     <button
       className={className}
-      onClick={onclick}
+      onClick={onClick}
       style={{
         fontSize,
         fontWeight,
