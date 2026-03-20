@@ -7,6 +7,9 @@ export type Path =
   | `/`
   | `/admin`
   | `/admin/menu`
+  | `/admin/product-register`
+  | `/admin/product-update`
+  | `/admin/user-register`
   | `/buy`
   | `/buy/:paymentMethod`
   | `/buy/:paymentMethod/confirm`
