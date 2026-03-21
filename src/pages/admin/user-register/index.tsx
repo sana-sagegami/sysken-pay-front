@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { BarcodeReader } from "../../components/ui/BarcodeReader";
+import { BarcodeReader } from "../../../components/ui/BarcodeReader";
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/layouts/Header";
-import { ArrowButton } from "../../components/ui/Button";
-import { useUserStore } from "../../store/useUserStore";
+import Header from "../../../components/layouts/Header";
+import { ArrowButton } from "../../../components/ui/Button";
+import { useUserStore } from "../../../store/useUserStore";
 
 export default function UserRegisterPage() {
   const [mode] = useState<"product" | "member">("member");
@@ -19,12 +19,12 @@ export default function UserRegisterPage() {
       createdAt: new Date(),
       updatedAt: new Date(),
     });
-    navigate("/buy/syspay/confirm");
+    navigate("/");
   };
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
-      <Header title="商品購入" />
+      <Header title="ユーザー登録" />
       <div className="flex flex-1 items-center justify-center">
         <BarcodeReader
           mode={mode}
