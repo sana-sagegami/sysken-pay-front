@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Input } from "../../../components/ui/Input";
-import Button, { ArrowButton } from "../../../components/ui/Button";
+import Button from "../../../components/ui/Button";
 import { CompletionModal } from "../../../components/ui/CompletionModal";
 import Header from "../../../components/layouts/Header";
+import ArrowButton from "../../../components/ui/ArrowButton";
 
 export default function UserRegisterPage() {
   const navigate = useNavigate();
@@ -31,17 +32,16 @@ export default function UserRegisterPage() {
       </div>
 
       <div className="flex justify-center mb-[4vh]">
-        <Button
-          text="登録"
-          buttonColor="blue"
-          width="23vw"
-          height="11vh"
-          fontSize="2.8vw"
-          onClick={handleRegister}
-        />
+        <Button size="md" onClick={handleRegister}>
+          登録
+        </Button>
       </div>
-
-      <ArrowButton type="back" />
+      <ArrowButton
+        variant="prev"
+        onClick={() => navigate("/admin/user-register")}
+      >
+        戻る
+      </ArrowButton>
 
       {showModal && (
         <CompletionModal

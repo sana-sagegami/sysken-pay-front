@@ -11,13 +11,13 @@ export default function Admin() {
   return (
     <div>
       <Header title="管理者" />
-      <Button size="lg" onClick={() => navigate("/admin/user")}>
+      <Button size="lg" onClick={() => navigate("/admin/user-register")}>
         ユーザー登録
       </Button>
-      <Button size="lg" onClick={() => navigate("/admin/product")}>
+      <Button size="lg" onClick={() => navigate("/admin/item-register")}>
         商品登録
       </Button>
-      <Button size="lg" onClick={() => navigate("/admin/update")}>
+      <Button size="lg" onClick={() => navigate("/admin/item-update")}>
         商品更新
       </Button>
       <ArrowButton variant="prev" onClick={handleAdmin}>

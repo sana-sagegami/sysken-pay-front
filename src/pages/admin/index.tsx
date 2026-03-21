@@ -23,7 +23,7 @@ export default function Admin() {
           </div>
         </div>
         <div>
-          <Button>決定</Button>
+          <Button size="md" >決定</Button>
         </div>
       </div>
       <ArrowButton variant="prev" onClick={handleHome}>

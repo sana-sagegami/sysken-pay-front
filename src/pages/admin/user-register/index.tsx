@@ -2,8 +2,8 @@ import { useState } from "react";
 import { BarcodeReader } from "../../../components/ui/BarcodeReader";
 import { useNavigate } from "react-router-dom";
 import Header from "../../../components/layouts/Header";
-import { ArrowButton } from "../../../components/ui/Button";
 import { useUserStore } from "../../../store/useUserStore";
+import ArrowButton from "../../../components/ui/ArrowButton";
 
 export default function UserRegisterPage() {
   const [mode] = useState<"product" | "member">("member");
@@ -19,7 +19,7 @@ export default function UserRegisterPage() {
       createdAt: new Date(),
       updatedAt: new Date(),
     });
-    navigate("admin/user-register/name");
+    navigate("/admin/user-register/name");
   };
 
   return (
@@ -32,7 +32,12 @@ export default function UserRegisterPage() {
           placeholder="学生証のバーコードをかざしてください"
         />
       </div>
-      <ArrowButton type="back" />
-    </div>
+      <ArrowButton
+        variant="prev"
+        onClick={() => navigate("/admin")}
+      >
+        戻る
+      </ArrowButton>
+      </div>
   );
 }
