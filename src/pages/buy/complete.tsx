@@ -21,7 +21,7 @@ export default function BuyCompletePage() {
         <br />
         またのご利用お待ちしております
       </p>
-      <Button size="large" onClick={handleHome}>
+      <Button size="lg" onClick={handleHome}>
         ホームへ戻る
       </Button>
     </div>

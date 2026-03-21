@@ -2,8 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { BarcodeReader } from "../../../components/ui/BarcodeReader";
 import { useUserStore } from "../../../store/useUserStore";
 import Header from "../../../components/layouts/Header";
-import Button from "../../../components/ui/Button";
 import Total from "../../../components/features/buy/Total";
+import ArrowButton from "../../../components/ui/ArrowButton";
 
 export default function PaymentStartPage() {
   const { paymentMethod } = useParams();
@@ -39,9 +39,9 @@ export default function PaymentStartPage() {
           />
         </>
       )}
-      <Button variant="backButton" onClick={() => navigate("/buy/confirm")}>
+      <ArrowButton variant="back" onClick={() => navigate("/buy/confirm")}>
         戻る
-      </Button>
+      </ArrowButton>
     </div>
   );
 }

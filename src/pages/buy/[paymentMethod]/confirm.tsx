@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../../../components/layouts/Header";
 import Button from "../../../components/ui/Button";
+import ArrowButton from "../../../components/ui/ArrowButton";
 import SysPayConfirm from "../../../components/features/buy/SysPayConfirm";
 
 export default function SysPayConfirmPage() {
@@ -18,9 +19,9 @@ export default function SysPayConfirmPage() {
       <div className="flex justify-center pb-8">
         <Button onClick={() => navigate("/buy/complete")}>購入</Button>
       </div>
-      <Button variant="backButton" onClick={() => navigate("/buy/syspay")}>
+      <ArrowButton variant="back" onClick={() => navigate("/buy/syspay")}>
         戻る
-      </Button>
+      </ArrowButton>
     </div>
   );
 }

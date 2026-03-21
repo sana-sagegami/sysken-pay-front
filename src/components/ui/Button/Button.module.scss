@@ -20,19 +20,22 @@
     box-shadow: 0px $px-1 $px-2 $shadow-20;
     opacity: 0.9;
   }
+
+  &.large{
+  width: 33vw;
+
 }
 
-.whiteButton{
+
+}
+
+.white{
   background-color: $white;
   border: #6b726b solid 1px;
   color: $blue-40;
 }
 
-.largeButton{
-  width: 33vw;
-}
-
-.smallButton{
+.small{
   width: 17vw;
   height: 9vh;
   font-size: 1.9vw;
@@ -40,7 +43,9 @@
   border: #6b726b solid 1px;
 }
 
-.backButton{
+
+
+.back{
   position: fixed;
   bottom: 6vh;
   left: -4vw;
@@ -64,7 +69,7 @@
 
 }
 
-.nextButton{
+.next{
     position: fixed;
     bottom: 6vh;
     right: -4vw;

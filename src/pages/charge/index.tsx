@@ -1,7 +1,7 @@
 import Header from "../../components/layouts/Header/index";
-import Button from "../../components/ui/Button/index";
 import { BarcodeReader } from "../../components/ui/BarcodeReader";
 import { useNavigate } from "react-router-dom";
+import ArrowButton from "../../components/ui/ArrowButton";
 
 export default function Charge() {
   const navigate = useNavigate();
@@ -22,9 +22,9 @@ export default function Charge() {
           placeholder="学生証のバーコードをかざしてください"
         />
       </div>
-      <Button variant="backButton" onClick={handleHome}>
+      <ArrowButton variant="back" onClick={handleHome}>
         戻る
-      </Button>
+      </ArrowButton>
     </div>
   );
 }
