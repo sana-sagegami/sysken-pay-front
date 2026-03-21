@@ -9,7 +9,7 @@ interface ButtonProps extends React.PropsWithChildren<
   onClick?: () => void;
 }
 
-export function Button(props: ButtonProps): JSX.Element {
+export default function Button(props: ButtonProps): JSX.Element {
   const { children, size = "md", onClick } = props;
   const className = [styles.button, size === "lg" && styles.large]
     .filter(Boolean)
@@ -21,5 +21,3 @@ export function Button(props: ButtonProps): JSX.Element {
     </button>
   );
 }
-
-export default Button;
