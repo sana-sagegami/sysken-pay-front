@@ -6,6 +6,7 @@ type ItemStore = {
   items: Item[];
   addItem: (item: Item) => void;
   removeItem: (id: string) => void;
+  updateItem: (item: Item) => void;
   clearItems: () => void;
 };
 
@@ -14,5 +15,9 @@ export const useItemStore = create<ItemStore>((set) => ({
   addItem: (item) => set((state) => ({ items: [...state.items, item] })),
   removeItem: (id) =>
     set((state) => ({ items: state.items.filter((i) => i.id !== id) })),
+  updateItem: (item) =>
+    set((state) => ({
+      items: state.items.map((i) => (i.id === item.id ? item : i)),
+    })),
   clearItems: () => set({ items: [] }),
 }));

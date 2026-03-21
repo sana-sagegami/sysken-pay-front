@@ -54,13 +54,13 @@ export function Input(props: InputProps): JSX.Element {
   const passwordToggleIcon = (
     <img
       alt="toggle visibility"
-      height={20}
+      height={40}
       src={
         isPasswordVisible
           ? "https://api.iconify.design/line-md:watch-loop.svg?color=%23A4A5B5"
           : "https://api.iconify.design/line-md:watch-off-loop.svg?color=%23A4A5B5"
       }
-      width={20}
+      width={40}
     />
   );
 

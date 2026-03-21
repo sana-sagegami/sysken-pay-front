@@ -20,15 +20,13 @@ export default function UserRegisterPage() {
       <Header title="ユーザー登録" />
 
       <div className="flex-1 flex flex-col items-center justify-start pt-[18vh]">
-        <div className="flex flex-col gap-3 w-[50vw]">
-          <div className="w-[30vw]">
-            <Input
-              label="名前"
-              placeholder="シス研太郎"
-              value={name}
-              onChange={setName}
-            />
-          </div>
+        <div className="flex flex-col gap-3">
+          <Input
+            label="名前"
+            placeholder="シス研太郎"
+            value={name}
+            onChange={setName}
+          />
         </div>
       </div>
 
@@ -46,7 +44,11 @@ export default function UserRegisterPage() {
       <ArrowButton type="back" />
 
       {showModal && (
-        <CompletionModal name={name} onClose={() => navigate("/admin/menu")} />
+        <CompletionModal
+          mode={"userRegister"}
+          name={name}
+          onClose={() => navigate("/admin/menu")}
+        />
       )}
     </div>
   );

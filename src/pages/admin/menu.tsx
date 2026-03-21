@@ -24,7 +24,7 @@ export default function Admin() {
           width="23vw"
           height="11vh"
           fontSize="2.8vw"
-          onClick={() => navigate("/admin/product-register")}
+          onClick={() => navigate("/admin/item-register")}
         />
         <Button
           text="商品更新"
@@ -32,7 +32,7 @@ export default function Admin() {
           width="23vw"
           height="11vh"
           fontSize="2.8vw"
-          onClick={() => navigate("/admin/product-update")}
+          onClick={() => navigate("/admin/item-update")}
         />
       </div>
       <ArrowButton type="back" />
