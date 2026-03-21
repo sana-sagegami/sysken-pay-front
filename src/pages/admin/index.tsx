@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import Headers from "../../components/layouts/Header/index";
-import Button, { ArrowButton } from "../../components/ui/Button/index";
+import Button from "../../components/ui/Button/index";
 import { Input } from "../../components/ui/Input";
+import ArrowButton from "../../components/ui/ArrowButton";
 
 export default function Admin() {
+  const navigate = useNavigate();
+  const handleHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       <Headers title="管理者" />
@@ -16,16 +23,12 @@ export default function Admin() {
           </div>
         </div>
         <div>
-          <Button
-            text="決定"
-            buttonColor="blue"
-            width="23vw"
-            height="11vh"
-            fontSize="2.8vw"
-          />
+          <Button>決定</Button>
         </div>
       </div>
-      <ArrowButton type="back" />
+      <ArrowButton variant="prev" onClick={handleHome}>
+        戻る
+      </ArrowButton>
     </div>
   );
 }
