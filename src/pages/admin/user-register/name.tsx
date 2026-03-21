@@ -44,7 +44,11 @@ export default function UserRegisterPage() {
       <ArrowButton type="back" />
 
       {showModal && (
-        <CompletionModal name={name} onClose={() => navigate("/admin/menu")} />
+        <CompletionModal
+          mode={"userRegister"}
+          name={name}
+          onClose={() => navigate("/admin/menu")}
+        />
       )}
     </div>
   );

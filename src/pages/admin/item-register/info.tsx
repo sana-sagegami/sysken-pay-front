@@ -47,7 +47,6 @@ export default function ProductRegisterPage() {
               />
             </div>
           </div>
-
         </div>
       </div>
 
@@ -65,7 +64,11 @@ export default function ProductRegisterPage() {
       <ArrowButton type="back" />
 
       {showModal && (
-        <CompletionModal name={name} onClose={() => navigate("/admin/menu")} />
+        <CompletionModal
+          mode={"itemRegister"}
+          name={name}
+          onClose={() => navigate("/admin/menu")}
+        />
       )}
     </div>
   );
