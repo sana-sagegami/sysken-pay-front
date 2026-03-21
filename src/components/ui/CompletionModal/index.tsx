@@ -19,6 +19,7 @@ export const CompletionModal = ({ name, onClose }: Props) => {
         <Button size="large" onClick={onClose}>
           ホームへ戻る
         </Button>
+
       </div>
     </div>
   );

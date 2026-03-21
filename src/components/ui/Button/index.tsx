@@ -5,7 +5,7 @@ import styles from "./Button.module.scss";
 interface ButtonProps extends React.PropsWithChildren<
   AriaButtonOptions<"button">
 > {
-  size?: "md" | "lg"; //デフォルト:medium , small:小さいボタン, medium:普通のボタン, large:大きいボタン
+  size?: "md" | "lg"; //デフォルト:medium , medium:普通のボタン, large:大きいボタン
   onClick?: () => void;
 }
 
