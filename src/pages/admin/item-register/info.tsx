@@ -17,7 +17,7 @@ export default function ProductRegisterPage() {
   const [showModal, setShowModal] = useState(false);
 
   const handleRegister = () => {
-    if (!name.trim()) return;
+  if (!name.trim() || !price.trim()) return;
     setShowModal(true);
   };
 
@@ -67,6 +67,7 @@ export default function ProductRegisterPage() {
         <CompletionModal
           mode={"itemRegister"}
           name={name}
+          price={Number(price)}
           onClose={() => navigate("/admin/menu")}
         />
       )}
