@@ -16,12 +16,10 @@ export const CompletionModal = ({ name, onClose }: Props) => {
           <br />
           の登録が完了しました
         </p>
-        <Button
-          text="ホームへ戻る"
-          buttonColor="blue"
-          fontSize="33px"
-          onClick={onClose}
-        ></Button>
+        <Button size="large" onClick={onClose}>
+          ホームへ戻る
+        </Button>
+
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 import { useState, type JSX } from "react";
 import { BarcodeReader } from "../../components/ui/BarcodeReader";
 import Header from "../../components/layouts/Header";
-import { ArrowButton } from "../../components/ui/Button";
 import { useNavigate } from "react-router-dom";
 import { useItemStore } from "../../store/useItemStore";
+import ArrowButton from "../../components/ui/ArrowButton";
 
 export default function Buy(): JSX.Element {
   const [mode] = useState<"product" | "member">("product");
@@ -35,7 +35,9 @@ export default function Buy(): JSX.Element {
           placeholder="商品のバーコードをかざしてください"
         />
       </div>
-      <ArrowButton type="back" />
+      <ArrowButton variant="prev" onClick={() => navigate("/")}>
+        戻る
+      </ArrowButton>
     </div>
   );
 }
