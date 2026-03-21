@@ -23,7 +23,7 @@ export const CompletionModal = ({ mode, name, price, onClose }: Props) => {
           <span className={styles.name}>{highlight}</span>
           <br />の{action}が完了しました
         </p>
-        <Button size="large" onClick={onClose}>
+        <Button size="lg" onClick={onClose}>
           ホームへ戻る
         </Button>
       </div>

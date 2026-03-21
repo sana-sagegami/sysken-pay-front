@@ -2,8 +2,8 @@ import { useState } from "react";
 import { BarcodeReader } from "../../../components/ui/BarcodeReader";
 import { useNavigate } from "react-router-dom";
 import Header from "../../../components/layouts/Header";
-import { ArrowButton } from "../../../components/ui/Button";
 import { useItemStore } from "../../../store/useItemStore";
+import ArrowButton from "../../../components/ui/ArrowButton";
 
 export default function ItemRegisterPage() {
   const [mode] = useState<"product" | "member">("product");
@@ -34,7 +34,12 @@ export default function ItemRegisterPage() {
           placeholder="商品のバーコードをかざしてください"
         />
       </div>
-      <ArrowButton type="back" />
+      <ArrowButton
+        variant="prev"
+        onClick={() => navigate("/admin/menu")}
+      >
+        戻る
+      </ArrowButton>
     </div>
   );
 }
