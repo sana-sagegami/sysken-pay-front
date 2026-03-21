@@ -13,10 +13,10 @@ export default function SysPayConfirmPage() {
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       <Header title="購入確定" right="toTop" />
-      <div className="flex-1 flex flex-col items-center justify-start  gap-8">
+      <div className="flex-1 flex flex-col items-center justify-start gap-8">
         <SysPayConfirm balance={balance} />
       </div>
-      <div className="flex justify-center pb-8">
+      <div className="flex justify-center pb-13">
         <Button onClick={() => navigate("/buy/complete")}>購入</Button>
       </div>
       <ArrowButton variant="prev" onClick={() => navigate("/buy/syspay")}>

@@ -17,7 +17,9 @@ export default function SysPayConfirm({ balance }: SysPayConfirmProps) {
       <div className={styles.card}>
         <PriceLabel label="シスPay" price={balance} />
         <PriceLabel label="合計" price={totalPrice} />
-        <PriceLabel label="不足額" price={shortage} />
+        <div className={shortage > 0 ? styles.shortage : ""}>
+          <PriceLabel label="不足額" price={shortage} />
+        </div>
       </div>
       <div className={styles.remaining}>
         <PriceLabel label="シスPay残高" price={remaining} />
