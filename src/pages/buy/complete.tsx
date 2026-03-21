@@ -27,7 +27,7 @@ export default function BuyCompletePage() {
         fontSize="2vw"
         width="40vw"
         height="8vh"
-        onclick={handleHome}
+        onClick={handleHome}
       />
     </div>
   );

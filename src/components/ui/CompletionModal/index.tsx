@@ -20,7 +20,7 @@ export const CompletionModal = ({ name, onClose }: Props) => {
           text="ホームへ戻る"
           buttonColor="blue"
           fontSize="33px"
-          onclick={onClose}
+          onClick={onClose}
         ></Button>
       </div>
     </div>
