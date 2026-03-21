@@ -35,7 +35,7 @@ export default function Buy(): JSX.Element {
           placeholder="商品のバーコードをかざしてください"
         />
       </div>
-      <ArrowButton variant="back" onClick={() => navigate("/")}>
+      <ArrowButton variant="prev" onClick={() => navigate("/")}>
         戻る
       </ArrowButton>
     </div>

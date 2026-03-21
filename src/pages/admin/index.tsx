@@ -24,7 +24,7 @@ export default function Admin() {
           <Button>決定</Button>
         </div>
       </div>
-      <ArrowButton variant="back" onClick={handleHome}>
+      <ArrowButton variant="prev" onClick={handleHome}>
         戻る
       </ArrowButton>
     </div>

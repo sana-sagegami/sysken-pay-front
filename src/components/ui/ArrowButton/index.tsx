@@ -5,16 +5,16 @@ import styles from "./ArrowButton.module.scss";
 interface ArrowButtonProps extends React.PropsWithChildren<
   AriaButtonOptions<"button">
 > {
-  variant?: "back" | "next"; //デフォルト:back ,  back:左向き矢印のボタン, next:右向き矢印のボタン
+  variant?: "prev" | "next"; //デフォルト:prev ,  prev:左向き矢印のボタン, next:右向き矢印のボタン
   onClick?: () => void;
 }
 
 export function ArrowButton(props: ArrowButtonProps): JSX.Element {
-  const { children, variant = "back", onClick } = props;
+  const { children, variant = "prev", onClick } = props;
   const className = [
     styles.arrowButton,
     styles.arrowIcon,
-    variant === "back" && styles.back,
+    variant === "prev" && styles.prev,
     variant === "next" && styles.next,
   ]
     .filter(Boolean)
@@ -22,7 +22,7 @@ export function ArrowButton(props: ArrowButtonProps): JSX.Element {
 
   return (
     <button className={className} onClick={onClick}>
-      {variant === "back" && (
+      {variant === "prev" && (
         <img
           src="/icons/LeftArrow.svg"
           alt="leftArrow"

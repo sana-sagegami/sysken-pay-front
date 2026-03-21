@@ -22,7 +22,7 @@ export default function Charge() {
           placeholder="学生証のバーコードをかざしてください"
         />
       </div>
-      <ArrowButton variant="back" onClick={handleHome}>
+      <ArrowButton variant="prev" onClick={handleHome}>
         戻る
       </ArrowButton>
     </div>

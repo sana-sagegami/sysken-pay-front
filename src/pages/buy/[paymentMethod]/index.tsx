@@ -39,7 +39,7 @@ export default function PaymentStartPage() {
           />
         </>
       )}
-      <ArrowButton variant="back" onClick={() => navigate("/buy/confirm")}>
+      <ArrowButton variant="prev" onClick={() => navigate("/buy/confirm")}>
         戻る
       </ArrowButton>
     </div>

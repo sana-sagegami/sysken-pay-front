@@ -16,7 +16,7 @@ export default function BuyConfirmPage() {
           <PayMethodButtonGroup />
         </div>
       </div>
-      <ArrowButton variant="back" onClick={() => navigate("/buy/list")}>
+      <ArrowButton variant="prev" onClick={() => navigate("/buy/list")}>
         戻る
       </ArrowButton>
     </div>

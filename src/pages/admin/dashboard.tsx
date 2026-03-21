@@ -20,7 +20,7 @@ export default function Admin() {
       <Button size="lg" onClick={() => navigate("/admin/update")}>
         商品更新
       </Button>
-      <ArrowButton variant="back" onClick={handleAdmin}>
+      <ArrowButton variant="prev" onClick={handleAdmin}>
         戻る
       </ArrowButton>
     </div>

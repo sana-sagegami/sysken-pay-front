@@ -14,7 +14,7 @@ export default function BuyListPage() {
       <div className="flex-1 flex flex-col items-center justify-start pt-10 gap-4 overflow-hidden">
         <ItemList Items={items} onDelete={removeItem} />
       </div>
-      <ArrowButton variant="back" onClick={() => navigate("/buy")}>
+      <ArrowButton variant="prev" onClick={() => navigate("/buy")}>
         戻る
       </ArrowButton>
       <ArrowButton variant="next" onClick={() => navigate("/buy/confirm")}>
