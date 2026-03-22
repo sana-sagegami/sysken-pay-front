@@ -6,6 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
+  preview: {
+    host: true,
+    port: 4173,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
