@@ -16,7 +16,7 @@ export default function SysPayConfirmPage() {
       <div className="flex-1 flex flex-col items-center justify-start gap-8">
         <SysPayConfirm balance={balance} />
       </div>
-      <div className="flex justify-center pb-13">
+      <div className="flex justify-center pb-19">
         <Button onClick={() => navigate("/buy/complete")}>購入</Button>
       </div>
       <ArrowButton variant="prev" onClick={() => navigate("/buy/syspay")}>
